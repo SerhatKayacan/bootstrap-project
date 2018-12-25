@@ -1,0 +1,257 @@
+/*general styling*/
+
+h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: #1886C7;
+    text-transform: uppercase;
+}
+p{
+    font-size: 14px;
+}
+
+/*home section*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    border-bottom: #1886C7 1px solid;
+}
+.navbar-brand{
+    color: #1886C7 !important;
+    font-size: 24px;
+}
+.bg-dark{                                       /*background rengini veren class*/
+    background-color: rgb(0,0,0,1) !important;
+}
+.nav-link{
+    color: white !important;
+    text-transform: uppercase;
+    transition: color .5s ease;
+}
+.nav-link:hover{
+    color: #1886C7 !important;
+}
+#headerSection{
+    background: url('../images/alesia-kazantceva-283288-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    height: 100vh;
+}
+#headerSection .overlay{
+    background-color: rgba(0,0,0,.7);
+}
+#headerSection .row{
+    height: 100vh;      /*ekranı kapla*/
+}
+#headerSection span{
+    color: #1886C7 !important;
+}
+.btn-outline-primary{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+                                /*features section*/
+
+#features .fa{
+    font-size: 40px;
+}
+#features h3{
+    font-size:  18px;
+    font-weight: 400;
+}
+.feature-top{
+    transition: color .5s ease;
+}
+.feature-top:hover{
+    color: #1886C7;
+    cursor: pointer;
+}
+
+/*history section*/
+
+#ourHistory h2{
+    border-left: 6px solid #1886C7;
+    padding-left: 30px;
+}
+#ourHistory .col-md-6{
+    display: inline;
+}
+#ourHistory .btn-outline-primary{
+    position: relative;
+}
+#ourHistory p {
+    line-height: 28px;
+}
+
+/* team section*/
+
+#team .card{
+    border:none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#team .card:hover{
+    opacity: 1;
+}
+#team .fab{
+    font-size: 24px;
+}
+
+/*what we do section*/
+
+#whtWeDo{
+    background: linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)
+    ),
+    url(../images/dlanor-s-703975-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*case study section*/
+#caseStudy{
+    background-color: #f4f5f9;
+    line-height: 28px;
+}
+.caseArea{
+    background-color: #fff;
+    margin-top: 40px;
+    margin-right: -40px;
+    z-index: 100;
+    padding: 40px;
+    position: relative;
+    min-height: 420px;
+}
+#caseStudy h3{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #1886C7;
+}
+#caseStudy .fas{
+    font-size: 40px;
+    color: #1886C7;
+}
+
+/*portfolio section */
+
+#portfolio .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+#portfolio h4{
+    font-size: 16px;
+    font-weight: 300;
+}
+#portfolio .fas{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#portfolio p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.imageContainer{
+    position: relative;
+    cursor: pointer;
+}
+.imageOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1886c7;
+    opacity: 0;
+    transition: 1s ease;
+}
+.imageContainer:hover .imageOverlay{
+    opacity: .7;
+} 
+.imageText{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*testimonials section*/
+
+#testimonials{
+    background: linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)
+    ),
+    url(../images/rawpixel-678089-unsplash.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.carousel-item img{
+    opacity: .5;
+}
+
+/* CONTACT SECTION*/
+
+#contact{
+    background-color: #f4f5f9;
+}
+#contact .input-group-text{
+    width: 50px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #1886c7;
+}
+
+/*foter */
+
+#main-footer{
+    color: #fff;
+    background-color: #000;
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    .display-3{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:768px){
+    .display-3{
+        font-size: 32px;
+    }
+    .caseImage{
+        margin-left: 0;
+        text-align: center;
+    }
+    .caseArea{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:576px){
+    .display-3{
+        font-size: 24px;
+    }
+}
